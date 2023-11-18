@@ -1,0 +1,7 @@
+﻿@model IEnumerable<wqa.Models.LoaiSanPham>
+@foreach (var item in Model)
+{
+    var url = "/pro/probydm/" + item.MaLoai;
+    
+    <li class="scroll-to-section"><a href="@url">@item.TenLoai</a></li>
+}
